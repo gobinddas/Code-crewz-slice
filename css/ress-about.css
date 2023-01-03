@@ -1,0 +1,134 @@
+@font-face {
+  font-family: regular;
+  src: url(/font/Objectivity/Objectivity-Regular.otf);
+}
+@font-face {
+  font-family: medium;
+  src: url(/font/Objectivity/Objectivity-Medium.otf);
+}
+@font-face {
+  font-family: bold;
+  src: url(/font/Objectivity/Objectivity-Bold.otf);
+}
+* {
+  margin: auto 0px;
+  padding: 0px;
+  font-family: regular;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+    overflow: hidden;
+  }
+  .container .about-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+    z-index: 900;
+  }
+  .container .about-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+  }
+  .container .about-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -40px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    z-index: 500;
+  }
+  .container .about-inner .inner-plans {
+    display: flex;
+    justify-content: center;
+  }
+  .container .about-inner .inner-plans .plans-content {
+    max-width: 1000px;
+    margin-top: 100px;
+  }
+  .container .about-inner .inner-plans .plans-content .plans {
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .container .about-inner .inner-plans .plans-content .paras {
+    max-width: 650px;
+    color: rgb(128, 141, 173);
+    text-align: center;
+    margin-left: 100px;
+  }
+  .container .about-inner .inner-plans .plans-content .paras p {
+    padding-left: 140px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .container .blur-green {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(65, 153, 104);
+    filter: blur(200px);
+    position: relative;
+    bottom: 0px;
+    margin-bottom: -600px;
+  }
+  .container .values {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container .values .respect {
+    width: 80%;
+    height: 100%;
+  }
+  .container .values .respect h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 200px 0px 50px 0px;
+  }
+  .container .values .respect h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    font-family: bold;
+  }
+  .container .values .respect .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .container .values .respect .grid-container .grid-item {
+    max-width: 350px;
+    margin: 40px;
+  }
+  .container .values .respect .grid-container .grid-item h2 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 30px 0px 30px 0px;
+  }
+  .container .values .respect .grid-container .grid-item p {
+    color: rgb(128, 141, 173);
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .container .values .respect .grid-container .grid-item .greadent {
+    height: 500px;
+    width: 400px;
+    background-color: rgb(81, 81, 197);
+    position: relative;
+    top: -500px;
+    left: 300px;
+    filter: blur(200px);
+  }
+}
+
+/*# sourceMappingURL=ress-about.css.map */

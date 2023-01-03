@@ -1,0 +1,404 @@
+@font-face {
+  font-family: regular;
+  src: url(/font/Objectivity/Objectivity-Regular.otf);
+}
+@font-face {
+  font-family: medium;
+  src: url(/font/Objectivity/Objectivity-Medium.otf);
+}
+@font-face {
+  font-family: bold;
+  src: url(/font/Objectivity/Objectivity-Bold.otf);
+}
+* {
+  margin: auto 0px;
+  padding: 0px;
+  font-family: regular;
+}
+
+@media only screen and (max-width: 1650px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+    overflow: hidden;
+  }
+  .container .work-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+  }
+  .container .work-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+  }
+  .container .work-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -40px;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .container .work-inner .inner-plans {
+    display: flex;
+    justify-content: center;
+  }
+  .container .work-inner .inner-plans .develop {
+    max-width: 900px;
+  }
+  .container .work-inner .inner-plans .develop h2 {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    font-size: 51px;
+    font-family: bold;
+  }
+  .container .work-inner p {
+    color: white;
+    font-size: 40px;
+    font-family: bold;
+    text-align: center;
+    margin-top: 20%;
+  }
+  .container .client {
+    display: flex;
+    justify-content: center;
+  }
+  .container .client .client-work {
+    width: 80%;
+  }
+  .container .client .client-work .w-work {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+  }
+  .container .client .client-work .w-work .w-img {
+    width: 47%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .client .client-work .w-work .w-content {
+    width: 47%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-content h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .container .client .client-work .w-work .w-content p {
+    color: rgb(128, 141, 173);
+    font-size: 15px;
+    margin: 15px 0px 15px 0px;
+  }
+  .container .client .client-work .w-work .w-content button {
+    color: white;
+    background-color: rgb(29, 41, 81);
+    width: 140px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .container .client .client-work .petra,
+  .container .client .client-work .asalpasal {
+    flex-direction: row-reverse;
+    margin: 100px 0px 100px 0px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+    overflow: hidden;
+  }
+  .container .work-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+  }
+  .container .work-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+  }
+  .container .work-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: -40px;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .container .work-inner .inner-plans {
+    display: flex;
+    justify-content: center;
+  }
+  .container .work-inner .inner-plans .develop {
+    max-width: 900px;
+  }
+  .container .work-inner .inner-plans .develop h2 {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    font-size: 51px;
+    font-family: bold;
+  }
+  .container .work-inner p {
+    color: white;
+    font-size: 40px;
+    font-family: bold;
+    text-align: center;
+    margin-top: 50%;
+  }
+  .container .client {
+    display: flex;
+    justify-content: center;
+  }
+  .container .client .client-work {
+    width: 80%;
+  }
+  .container .client .client-work .w-work {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40vh;
+  }
+  .container .client .client-work .w-work .w-img {
+    width: 47%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .client .client-work .w-work .w-content {
+    width: 47%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-content h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .container .client .client-work .w-work .w-content p {
+    color: rgb(128, 141, 173);
+    font-size: 15px;
+    margin: 15px 0px 15px 0px;
+  }
+  .container .client .client-work .w-work .w-content button {
+    color: white;
+    background-color: rgb(29, 41, 81);
+    width: 140px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .container .client .client-work .petra,
+  .container .client .client-work .asalpasal {
+    flex-direction: row-reverse;
+    margin: 100px 0px 100px 0px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+    overflow: hidden;
+  }
+  .container .work-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+  }
+  .container .work-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+  }
+  .container .work-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: -40px;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .container .work-inner .inner-plans {
+    display: flex;
+    justify-content: center;
+  }
+  .container .work-inner .inner-plans .develop {
+    max-width: 900px;
+  }
+  .container .work-inner .inner-plans .develop h2 {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    font-size: 51px;
+    font-family: bold;
+  }
+  .container .work-inner p {
+    color: white;
+    font-size: 40px;
+    font-family: bold;
+    text-align: center;
+    margin-top: 50%;
+  }
+  .container .client {
+    display: flex;
+    justify-content: center;
+  }
+  .container .client .client-work {
+    width: 80%;
+  }
+  .container .client .client-work .w-work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 30vh;
+  }
+  .container .client .client-work .w-work .w-img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .client .client-work .w-work .w-content {
+    width: 100%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-content h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5%;
+  }
+  .container .client .client-work .w-work .w-content p {
+    color: rgb(128, 141, 173);
+    font-size: 15px;
+    margin: 15px 0px 15px 0px;
+  }
+  .container .client .client-work .w-work .w-content button {
+    color: white;
+    background-color: rgb(29, 41, 81);
+    width: 140px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .container .client .client-work .petra,
+  .container .client .client-work .asalpasal {
+    flex-direction: column;
+    margin-bottom: 30vh;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+    overflow: hidden;
+  }
+  .container .work-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+  }
+  .container .work-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+  }
+  .container .work-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: -40px;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .container .work-inner .inner-plans {
+    display: flex;
+    justify-content: center;
+  }
+  .container .work-inner .inner-plans .develop {
+    max-width: 900px;
+  }
+  .container .work-inner .inner-plans .develop h2 {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    font-family: bold;
+  }
+  .container .work-inner p {
+    color: white;
+    font-size: 29px;
+    font-family: bold;
+    text-align: center;
+    margin-top: 75%;
+  }
+  .container .client {
+    display: flex;
+    justify-content: center;
+  }
+  .container .client .client-work {
+    width: 80%;
+  }
+  .container .client .client-work .w-work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 30vh;
+  }
+  .container .client .client-work .w-work .w-img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .client .client-work .w-work .w-content {
+    width: 100%;
+    height: 100%;
+  }
+  .container .client .client-work .w-work .w-content h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5%;
+  }
+  .container .client .client-work .w-work .w-content p {
+    color: rgb(128, 141, 173);
+    font-size: 15px;
+    margin: 15px 0px 15px 0px;
+  }
+  .container .client .client-work .w-work .w-content button {
+    color: white;
+    background-color: rgb(29, 41, 81);
+    width: 140px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .container .client .client-work .petra,
+  .container .client .client-work .asalpasal {
+    flex-direction: column;
+    margin-bottom: 30vh;
+  }
+}
+
+/*# sourceMappingURL=ress-work.css.map */

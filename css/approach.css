@@ -1,0 +1,298 @@
+@font-face {
+  font-family: regular;
+  src: url(/font/Objectivity/Objectivity-Regular.otf);
+}
+@font-face {
+  font-family: medium;
+  src: url(/font/Objectivity/Objectivity-Medium.otf);
+}
+@font-face {
+  font-family: bold;
+  src: url(/font/Objectivity/Objectivity-Bold.otf);
+}
+* {
+  margin: auto 0px;
+  padding: 0px;
+  font-family: regular;
+}
+
+.container {
+  background-color: rgb(14, 22, 48);
+}
+.container .header {
+  background-color: rgb(14, 22, 48);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 2px -2px rgb(10, 9, 9);
+}
+.container .header .nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .header .nav .logo {
+  width: 10%;
+}
+.container .header .nav .logo a img {
+  width: 70%;
+}
+.container .header .nav .nav-item {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .header .nav .nav-item .n-item a {
+  text-decoration: none;
+  color: white;
+}
+.container .header .nav .num {
+  width: 10%;
+}
+.container .header .nav .num a {
+  text-decoration: none;
+  color: white;
+}
+.container .header .nav .code {
+  display: none;
+}
+.container .header .nav .code h3 {
+  color: white;
+}
+.container .header .nav .bar {
+  display: none;
+}
+.container .header .nav .bar i {
+  color: white;
+  font-size: 30px;
+}
+.container .response-nav {
+  height: 25vh;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(14, 22, 48);
+  display: none;
+  position: absolute;
+}
+.container .response-nav .resnav {
+  border-radius: 15px;
+  height: 100%;
+  width: 25%;
+  background-color: rgb(10, 13, 26);
+  margin-right: 5px;
+}
+.container .response-nav .resnav .menus {
+  padding: 5px 0px 5px 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .response-nav .resnav .menus .item a {
+  text-decoration: none;
+  color: white;
+}
+.container .response-nav .resnav .menus .item a i {
+  margin-right: 20px;
+}
+.container .greadent {
+  height: 500px;
+  width: 400px;
+  background-color: rgb(75, 75, 134);
+  position: absolute;
+  top: 0;
+  filter: blur(200px);
+}
+.container .approach-inner {
+  height: 100vh;
+  background-color: rgb(14, 22, 48);
+}
+.container .approach-inner h1 {
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(27, 138, 246);
+  font-size: 80px;
+  opacity: 0.2;
+}
+.container .approach-inner h3 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: -40px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+.container .approach-inner .inner-plans {
+  display: flex;
+  justify-content: center;
+}
+.container .approach-inner .inner-plans .develop {
+  max-width: 900px;
+}
+.container .approach-inner .inner-plans .develop h2 {
+  margin-top: 10%;
+  text-align: center;
+  color: white;
+  font-size: 65px;
+  font-family: bold;
+}
+.container .approach-inner .belive {
+  display: flex;
+  justify-content: center;
+}
+.container .approach-inner .belive .friendly {
+  max-width: 50%;
+}
+.container .approach-inner .belive .friendly p {
+  color: white;
+  font-size: 40px;
+  font-family: bold;
+  text-align: center;
+  margin-top: 40%;
+}
+.container .approach-con2 {
+  display: flex;
+  justify-content: center;
+}
+.container .approach-con2 .con2-inner {
+  width: 80%;
+  height: 60vh;
+}
+.container .approach-con2 .con2-inner .first-row {
+  display: flex;
+  justify-content: space-between;
+}
+.container .approach-con2 .con2-inner .first-row .img {
+  margin-top: 0px;
+}
+.container .approach-con2 .con2-inner .first-row .partner {
+  max-width: 30%;
+}
+.container .approach-con2 .con2-inner .first-row .partner h3 {
+  color: white;
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-family: bold;
+}
+.container .approach-con2 .con2-inner .first-row .partner p {
+  color: rgb(128, 141, 173);
+  line-height: 25px;
+  font-size: 18px;
+}
+.container .approach-con2 .con2-inner .second-row {
+  margin-top: 100px;
+}
+.container .map {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .map .world {
+  width: 80%;
+  height: 100%;
+}
+.container .map .world .country-name {
+  margin-top: 100px;
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(13, 19, 40);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.container .map .world .country-name .country {
+  line-height: 46px;
+  padding: 60px;
+}
+.container .map .world .country-name .country h2 {
+  margin-bottom: 30px;
+}
+.container .map .world .country-name .country h2 img {
+  width: 40px;
+  height: 20px;
+  margin-left: 20px;
+}
+.container .map .world .country-name .country h4 {
+  letter-spacing: 1px;
+}
+.container .footer {
+  margin-top: 150px;
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(13, 19, 40);
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.container .footer .footer-inner {
+  width: 80%;
+  height: 80%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .footer .footer-inner .code {
+  line-height: 20px;
+  max-width: 30%;
+}
+.container .footer .footer-inner .code .crew {
+  display: flex;
+}
+.container .footer .footer-inner .code .crew img {
+  width: 60px;
+}
+.container .footer .footer-inner .code .crew h1 {
+  font-size: 20px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+.container .footer .footer-inner .code p {
+  color: rgb(128, 141, 173);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container .footer .footer-inner .code .icons {
+  display: flex;
+  color: white;
+}
+.container .footer .footer-inner .code .icons .facebook {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(128, 141, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.container .footer .footer-inner .code .icons .instagram {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(128, 141, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer .footer-inner .link {
+  line-height: 40px;
+}
+.container .footer .footer-inner .link h4 {
+  margin-bottom: 30px;
+}
+.container .footer .footer-inner .link p {
+  color: rgb(128, 141, 173);
+}
+.container .footer .footer-inner .details {
+  line-height: 40px;
+}
+.container .footer .footer-inner .details h4 {
+  margin-bottom: 30px;
+}
+.container .footer .footer-inner .details p {
+  color: rgb(128, 141, 173);
+}
+
+/*# sourceMappingURL=approach.css.map */

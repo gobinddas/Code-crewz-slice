@@ -1,0 +1,105 @@
+@font-face {
+  font-family: regular;
+  src: url(/font/Objectivity/Objectivity-Regular.otf);
+}
+@font-face {
+  font-family: medium;
+  src: url(/font/Objectivity/Objectivity-Medium.otf);
+}
+@font-face {
+  font-family: bold;
+  src: url(/font/Objectivity/Objectivity-Bold.otf);
+}
+* {
+  margin: auto 0px;
+  padding: 0px;
+  font-family: regular;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+  }
+  .container .approach-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+  }
+  .container .approach-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+  }
+  .container .approach-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -40px;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .container .approach-inner .inner-plans {
+    display: flex;
+    justify-content: center;
+  }
+  .container .approach-inner .inner-plans .develop {
+    max-width: 900px;
+  }
+  .container .approach-inner .inner-plans .develop h2 {
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    font-size: 43px;
+    font-family: bold;
+  }
+  .container .approach-inner .belive {
+    display: flex;
+    justify-content: center;
+  }
+  .container .approach-inner .belive .friendly {
+    max-width: 80%;
+  }
+  .container .approach-inner .belive .friendly p {
+    color: white;
+    font-size: 30px;
+    font-family: bold;
+    text-align: center;
+    margin-top: 70%;
+  }
+  .container .approach-con2 {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .container .approach-con2 .con2-inner {
+    width: 80%;
+    height: 100%;
+  }
+  .container .approach-con2 .con2-inner .first-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .approach-con2 .con2-inner .first-row .img {
+    margin-top: 40px;
+  }
+  .container .approach-con2 .con2-inner .first-row .partner {
+    max-width: 100%;
+  }
+  .container .approach-con2 .con2-inner .first-row .partner h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: bold;
+  }
+  .container .approach-con2 .con2-inner .first-row .partner p {
+    color: rgb(128, 141, 173);
+    line-height: 25px;
+    font-size: 18px;
+  }
+  .container .approach-con2 .con2-inner .second-row {
+    margin-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=res-approach.css.map */

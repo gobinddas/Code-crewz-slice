@@ -1,0 +1,802 @@
+$text-color:rgb(128, 141, 173);
+$highlight-color:rgb(27, 138, 246);
+$background-color:rgb(14, 22, 48);
+$box-background-color: rgb(13, 19, 40);
+// font--------------
+@font-face {
+    font-family: regular;
+    src: url(/font/Objectivity/Objectivity-Regular.otf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(/font/Objectivity/Objectivity-Medium.otf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(/font/Objectivity/Objectivity-Bold.otf);
+}
+
+* {
+    margin: auto 0px;
+    padding: 0px;
+    font-family: regular;
+}
+
+// responsive screen size 1500-----------------------
+@media only screen and (max-width:1500px) {
+    .container {
+        background-color: $background-color;
+        .header {
+            background-color: $background-color;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 2px -2px rgb(10, 9, 9);
+            .nav {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                .logo {
+                    width: 12%;
+                    a {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+                .nav-item {
+                    width: 30%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .n-item {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+                .num {
+                    width: 12%;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        i {}
+                    }
+                }
+            }
+        }
+        .greadent {
+            height: 500px;
+            width: 400px;
+            background-color: rgb(75, 75, 134);
+            position: absolute;
+            top: 0;
+            filter: blur(200px);
+        }
+        // map-container----------
+        .map {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .world {
+                width: 80%;
+                height: 100%;
+                .img {}
+                .country-name {
+                    margin-top: 100px;
+                    height: 40vh;
+                    width: 100%;
+                    background-color: $box-background-color;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    .country {
+                        // max-width: 300px;
+                        line-height: 41px;
+                        padding: 49px;
+                        h2 {
+                            margin-bottom: 30px;
+                            img {
+                                width: 40px;
+                                height: 20px;
+                                margin-left: 20px;
+                            }
+                        }
+                        h4 {
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            margin-top: 150px;
+            height: 40vh;
+            width: 100%;
+            background-color: $box-background-color;
+            display: flex;
+            justify-content: center;
+            color: white;
+            .footer-inner {
+                width: 80%;
+                height: 80%;
+                padding-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                .code {
+                    line-height: 20px;
+                    max-width: 30%;
+                    .crew {
+                        display: flex;
+                        img {
+                            width: 60px;
+                        }
+                        h1 {
+                            font-size: 20px;
+                            margin-left: 20px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    p {
+                        color: $text-color;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+                    .icons {
+                        display: flex;
+                        color: white;
+                        .facebook {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 20px;
+                        }
+                        .instagram {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .link {
+                    line-height: 40px;
+                    h4 {
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+                .details {
+                    line-height: 40px;
+                    h4 {
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive screen size 1250-----------------------
+@media only screen and (max-width:1250px) {
+    .container {
+        background-color: $background-color;
+        .header {
+            background-color: $background-color;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 2px -2px rgb(10, 9, 9);
+            .nav {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                .logo {
+                    width: 15%;
+                    a {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+                .nav-item {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .n-item {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+                .num {
+                    width: 16%;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        i {}
+                    }
+                }
+            }
+        }
+        .greadent {
+            height: 500px;
+            width: 400px;
+            background-color: rgb(75, 75, 134);
+            position: absolute;
+            top: 0;
+            filter: blur(200px);
+        }
+        // map-container----------
+        .map {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .world {
+                width: 80%;
+                height: 100%;
+                .img {}
+                .country-name {
+                    margin-top: 100px;
+                    height: 40vh;
+                    width: 100%;
+                    background-color: $box-background-color;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    .country {
+                        // max-width: 300px;
+                        line-height: 37px;
+                        padding: 42px 10px 42px 20px;
+                        h2 {
+                            margin-bottom: 30px;
+                            img {
+                                width: 40px;
+                                height: 20px;
+                                margin-left: 20px;
+                            }
+                        }
+                        h4 {
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            margin-top: 150px;
+            height: 40vh;
+            width: 100%;
+            background-color: $box-background-color;
+            display: flex;
+            justify-content: center;
+            color: white;
+            .footer-inner {
+                width: 80%;
+                height: 80%;
+                padding-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                .code {
+                    line-height: 20px;
+                    max-width: 30%;
+                    .crew {
+                        display: flex;
+                        img {
+                            width: 60px;
+                        }
+                        h1 {
+                            font-size: 20px;
+                            margin-left: 20px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    p {
+                        color: $text-color;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+                    .icons {
+                        display: flex;
+                        color: white;
+                        .facebook {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 20px;
+                        }
+                        .instagram {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .link {
+                    line-height: 40px;
+                    h4 {
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+                .details {
+                    line-height: 40px;
+                    h4 {
+                        margin-bottom: 30px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive screen size 1000-----------------------
+@media only screen and (max-width:1000px) {
+    .container {
+        background-color: $background-color;
+        .header {
+            background-color: $background-color;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 2px -2px rgb(10, 9, 9);
+            .nav {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                z-index: 300;
+                .logo {
+                    width: 23%;
+                    a {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+                .nav-item {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    display: none;
+                    .n-item {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+                .num {
+                    display: none;
+                    width: 16%;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        i {}
+                    }
+                }
+                .code {
+                    display: contents;
+                    h3 {
+                        color: white;
+                    }
+                }
+                .bar {
+                    display: contents;
+                    i {
+                        color: white;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .response-nav {
+            height: 25vh;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute !important;
+            background-color: transparent;
+            top: 6%;
+            // display: contents;
+            .resnav {
+                border-radius: 0px 0px 0px 15px;
+                height: 100%;
+                width: 25%;
+                background-color: rgb(18, 25, 59);
+                margin-right: 5px;
+                z-index: 400;
+                .menus {
+                    padding: 5px 0px 5px 25px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-evenly;
+                    .item {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            i {
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .greadent {
+            height: 500px;
+            width: 400px;
+            background-color: rgb(75, 75, 134);
+            position: absolute;
+            top: 0;
+            filter: blur(200px);
+        }
+        // map-container----------
+        .map {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .world {
+                width: 80%;
+                height: 100%;
+                .img {}
+                .country-name {
+                    margin-top: 100px;
+                    height: 100%;
+                    width: 100%;
+                    background-color: $box-background-color;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-between;
+                    .country {
+                        // max-width: 300px;
+                        line-height: 37px;
+                        padding: 42px 10px 42px 20px;
+                        h2 {
+                            margin-bottom: 30px;
+                            img {
+                                width: 40px;
+                                height: 20px;
+                                margin-left: 20px;
+                            }
+                        }
+                        h4 {
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            margin-top: 150px;
+            height: 100%;
+            width: 100%;
+            background-color: $box-background-color;
+            display: flex;
+            justify-content: center;
+            color: white;
+            .footer-inner {
+                width: 80%;
+                height: 80%;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .code {
+                    line-height: 20px;
+                    max-width: 100%;
+                    .crew {
+                        display: flex;
+                        img {
+                            width: 60px;
+                        }
+                        h1 {
+                            font-size: 20px;
+                            margin-left: 20px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    p {
+                        color: $text-color;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .icons {
+                        display: flex;
+                        color: white;
+                        .facebook {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 20px;
+                        }
+                        .instagram {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .link {
+                    line-height: 20px;
+                    h4 {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+                .details {
+                    line-height: 20px;
+                    h4 {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive screen size 750-----------------------
+@media only screen and (max-width:750px) {
+    .container {
+        background-color: $background-color;
+        .header {
+            background-color: $background-color;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 2px -2px rgb(10, 9, 9);
+            .nav {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                .logo {
+                    display: none;
+                    width: 23%;
+                    a {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+                .nav-item {
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    display: none;
+                    .n-item {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+                .num {
+                    display: none;
+                    width: 16%;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        i {}
+                    }
+                }
+                .code {
+                    display: contents;
+                    h3 {
+                        color: white;
+                    }
+                }
+                .bar {
+                    display: contents;
+                    i {
+                        color: white;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .response-nav {
+            height: 25vh;
+            width: 100%;
+            background-color: transparent;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 6%;
+            // display: contents;
+            .resnav {
+                border-radius: 0px 0px 0px 15px;
+                height: 100%;
+                width: 25%;
+                background-color: rgb(15, 24, 65);
+                margin-right: 5px;
+                .menus {
+                    padding: 5px 0px 5px 25px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-evenly;
+                    .item {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            i {
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .greadent {
+            height: 500px;
+            width: 400px;
+            background-color: rgb(75, 75, 134);
+            position: absolute;
+            top: 0;
+            filter: blur(200px);
+        }
+        // map-container----------
+        .map {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .world {
+                width: 80%;
+                height: 100%;
+                .img {}
+                .country-name {
+                    margin-top: 100px;
+                    height: 100%;
+                    width: 100%;
+                    background-color: $box-background-color;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-between;
+                    .country {
+                        // max-width: 300px;
+                        line-height: 37px;
+                        padding: 42px 10px 42px 20px;
+                        h2 {
+                            margin-bottom: 30px;
+                            img {
+                                width: 40px;
+                                height: 20px;
+                                margin-left: 20px;
+                            }
+                        }
+                        h4 {
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            margin-top: 150px;
+            height: 100%;
+            width: 100%;
+            background-color: $box-background-color;
+            display: flex;
+            justify-content: center;
+            color: white;
+            .footer-inner {
+                width: 80%;
+                height: 80%;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .code {
+                    line-height: 20px;
+                    max-width: 100%;
+                    .crew {
+                        display: flex;
+                        img {
+                            width: 60px;
+                        }
+                        h1 {
+                            font-size: 20px;
+                            margin-left: 20px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    p {
+                        color: $text-color;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .icons {
+                        display: flex;
+                        color: white;
+                        .facebook {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 20px;
+                        }
+                        .instagram {
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid $text-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .link {
+                    line-height: 20px;
+                    h4 {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+                .details {
+                    line-height: 20px;
+                    h4 {
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}

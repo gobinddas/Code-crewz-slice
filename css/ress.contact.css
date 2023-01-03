@@ -1,0 +1,234 @@
+@font-face {
+  font-family: regular;
+  src: url(/font/Objectivity/Objectivity-Regular.otf);
+}
+@font-face {
+  font-family: medium;
+  src: url(/font/Objectivity/Objectivity-Medium.otf);
+}
+@font-face {
+  font-family: bold;
+  src: url(/font/Objectivity/Objectivity-Bold.otf);
+}
+* {
+  margin: auto 0px;
+  padding: 0px;
+  font-family: regular;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+    overflow: hidden;
+  }
+  .container .contact-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+  }
+  .container .contact-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+    z-index: 500;
+  }
+  .container .contact-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -40px;
+    font-weight: 1000;
+    z-index: 500;
+  }
+  .container .contact-inner .mail {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .contact-inner .mail .inner-mail {
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .contact-inner .mail .inner-mail .support {
+    width: 47%;
+    height: 100%;
+  }
+  .container .contact-inner .mail .inner-mail .support .suport-content {
+    line-height: 25px;
+    max-width: 90%;
+  }
+  .container .contact-inner .mail .inner-mail .support .suport-content p {
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+  }
+  .container .contact-inner .mail .inner-mail .support .suport-content .para {
+    margin-top: 25px;
+  }
+  .container .contact-inner .mail .inner-mail .form {
+    color: white;
+    width: 47%;
+    height: 100%;
+  }
+  .container .contact-inner .mail .inner-mail .form p {
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .container .contact-inner .mail .inner-mail .form form label {
+    font-size: 13px;
+    font-weight: 50;
+  }
+  .container .contact-inner .mail .inner-mail .form form input {
+    border: none;
+    background-color: rgb(14, 22, 48);
+    outline: none;
+    font-size: 12px;
+    font-weight: 50;
+    color: white;
+    font-size: 20px;
+  }
+  .container .contact-inner .mail .inner-mail .form form hr {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: rgb(128, 141, 173);
+    color: rgb(128, 141, 173);
+  }
+  .container .contact-inner .mail .inner-mail .form form .message textarea {
+    outline: none;
+    border: none;
+    background-color: rgb(14, 22, 48);
+    color: white;
+    font-size: 20px;
+    font-weight: 50;
+  }
+  .container .contact-inner .mail .inner-mail .form form .message textarea-placeholder {
+    font-size: 60px;
+  }
+  .container .contact-inner .mail .inner-mail .form form .date hr {
+    border: 1px solid rgb(27, 138, 246);
+  }
+  .container .contact-inner .mail .inner-mail .form form button {
+    font-size: 20px;
+    font-weight: 50;
+    background-color: rgb(27, 138, 246);
+    border: none;
+    color: white;
+    width: 140px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .container {
+    background-color: rgb(14, 22, 48);
+    overflow: hidden;
+  }
+  .container .contact-inner {
+    height: 100vh;
+    background-color: rgb(14, 22, 48);
+    margin-bottom: 200px;
+  }
+  .container .contact-inner h1 {
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(27, 138, 246);
+    font-size: 80px;
+    opacity: 0.2;
+  }
+  .container .contact-inner h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: -40px;
+    font-weight: 1000;
+  }
+  .container .contact-inner .mail {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .container .contact-inner .mail .inner-mail {
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container .contact-inner .mail .inner-mail .support {
+    width: 100%;
+    height: 100%;
+  }
+  .container .contact-inner .mail .inner-mail .support .suport-content {
+    line-height: 25px;
+    max-width: 90%;
+  }
+  .container .contact-inner .mail .inner-mail .support .suport-content p {
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+  }
+  .container .contact-inner .mail .inner-mail .support .suport-content .para {
+    margin-top: 25px;
+  }
+  .container .contact-inner .mail .inner-mail .form {
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+  .container .contact-inner .mail .inner-mail .form p {
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .container .contact-inner .mail .inner-mail .form form label {
+    font-size: 13px;
+    font-weight: 50;
+  }
+  .container .contact-inner .mail .inner-mail .form form input {
+    border: none;
+    background-color: rgb(14, 22, 48);
+    outline: none;
+    font-size: 12px;
+    font-weight: 50;
+    color: white;
+    font-size: 20px;
+  }
+  .container .contact-inner .mail .inner-mail .form form hr {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: rgb(128, 141, 173);
+    color: rgb(128, 141, 173);
+  }
+  .container .contact-inner .mail .inner-mail .form form .message textarea {
+    outline: none;
+    border: none;
+    background-color: rgb(14, 22, 48);
+    color: white;
+    font-size: 20px;
+    font-weight: 50;
+  }
+  .container .contact-inner .mail .inner-mail .form form .message textarea-placeholder {
+    font-size: 60px;
+  }
+  .container .contact-inner .mail .inner-mail .form form .date hr {
+    border: 1px solid rgb(27, 138, 246);
+  }
+  .container .contact-inner .mail .inner-mail .form form button {
+    font-size: 20px;
+    font-weight: 50;
+    background-color: rgb(27, 138, 246);
+    border: none;
+    color: white;
+    width: 140px;
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=ress.contact.css.map */
